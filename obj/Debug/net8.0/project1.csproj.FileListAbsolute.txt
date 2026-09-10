@@ -1,0 +1,14 @@
+/Users/jsb/Library/CloudStorage/Dropbox/Teaching/2255/CSCI.251/projects/project1-starter/bin/Debug/net8.0/project1
+/Users/jsb/Library/CloudStorage/Dropbox/Teaching/2255/CSCI.251/projects/project1-starter/bin/Debug/net8.0/project1.deps.json
+/Users/jsb/Library/CloudStorage/Dropbox/Teaching/2255/CSCI.251/projects/project1-starter/bin/Debug/net8.0/project1.runtimeconfig.json
+/Users/jsb/Library/CloudStorage/Dropbox/Teaching/2255/CSCI.251/projects/project1-starter/bin/Debug/net8.0/project1.dll
+/Users/jsb/Library/CloudStorage/Dropbox/Teaching/2255/CSCI.251/projects/project1-starter/bin/Debug/net8.0/project1.pdb
+/Users/jsb/Library/CloudStorage/Dropbox/Teaching/2255/CSCI.251/projects/project1-starter/obj/Debug/net8.0/project1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jsb/Library/CloudStorage/Dropbox/Teaching/2255/CSCI.251/projects/project1-starter/obj/Debug/net8.0/project1.AssemblyInfoInputs.cache
+/Users/jsb/Library/CloudStorage/Dropbox/Teaching/2255/CSCI.251/projects/project1-starter/obj/Debug/net8.0/project1.AssemblyInfo.cs
+/Users/jsb/Library/CloudStorage/Dropbox/Teaching/2255/CSCI.251/projects/project1-starter/obj/Debug/net8.0/project1.csproj.CoreCompileInputs.cache
+/Users/jsb/Library/CloudStorage/Dropbox/Teaching/2255/CSCI.251/projects/project1-starter/obj/Debug/net8.0/project1.dll
+/Users/jsb/Library/CloudStorage/Dropbox/Teaching/2255/CSCI.251/projects/project1-starter/obj/Debug/net8.0/refint/project1.dll
+/Users/jsb/Library/CloudStorage/Dropbox/Teaching/2255/CSCI.251/projects/project1-starter/obj/Debug/net8.0/project1.pdb
+/Users/jsb/Library/CloudStorage/Dropbox/Teaching/2255/CSCI.251/projects/project1-starter/obj/Debug/net8.0/project1.genruntimeconfig.cache
+/Users/jsb/Library/CloudStorage/Dropbox/Teaching/2255/CSCI.251/projects/project1-starter/obj/Debug/net8.0/ref/project1.dll
