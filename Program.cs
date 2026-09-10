@@ -20,8 +20,8 @@ public class Program
 
         var results = new Dictionary<string, (int passed, int total, int points)>();
 
-        results["BuggyBank"] = TestBuggyBank();
-        // results["BuggyCounter"] = TestBuggyCounter();
+        //results["BuggyBank"] = TestBuggyBank();
+        results["BuggyCounter"] = TestBuggyCounter();
         // results["BuggyCache"] = TestBuggyCache();
         // results["BuggyLogger"] = TestBuggyLogger();
         // results["BuggyQueue"] = TestBuggyQueue();

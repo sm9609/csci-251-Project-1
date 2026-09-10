@@ -19,16 +19,13 @@ public class BuggyCounter
     {
         // BUG: This looks atomic but it's actually read-modify-write!
         // _count++ is equivalent to: temp = _count; temp = temp + 1; _count = temp;
-        _count++;
+        Interlocked.Increment(ref _count);
     }
 
     public void IncrementBy(int amount)
     {
         // BUG: Same problem, just more obvious
-        for (int i = 0; i < amount; i++)
-        {
-            _count++;
-        }
+        Interlocked.Add(ref _count, amount);
     }
 
     public void Reset()

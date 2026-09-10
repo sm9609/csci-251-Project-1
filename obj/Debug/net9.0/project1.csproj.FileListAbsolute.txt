@@ -12,3 +12,4 @@
 /Users/samm/CodeProjects/C#/csci-251-Project-1/obj/Debug/net9.0/project1.pdb
 /Users/samm/CodeProjects/C#/csci-251-Project-1/obj/Debug/net9.0/project1.genruntimeconfig.cache
 /Users/samm/CodeProjects/C#/csci-251-Project-1/obj/Debug/net9.0/ref/project1.dll
+/Users/samm/CodeProjects/C#/csci-251-Project-1/obj/Debug/net9.0/project1.sourcelink.json
