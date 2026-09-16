@@ -12,6 +12,7 @@ namespace RaceConditionDetective;
 public class BuggyCache
 {
     private readonly Dictionary<string, int> _cache = new();
+    private readonly object _sync = new object();
     private int _computeCount = 0;
 
     /// <summary>
@@ -27,12 +28,14 @@ public class BuggyCache
     {
         // BUG: Check-then-act race condition!
         // Multiple threads can see the key as missing and all compute it.
-        if (!_cache.ContainsKey(key))
+        lock (_sync)
         {
-            int value = ExpensiveComputation(key);
-            _cache[key] = value;
+            if (!_cache.ContainsKey(key))
+            {
+                int value = ExpensiveComputation(key);
+                _cache[key] = value;
+            }
         }
-
         return _cache[key];
     }
 
