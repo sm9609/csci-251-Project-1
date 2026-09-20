@@ -43,8 +43,6 @@ public class BuggyQueue<T> where T : class
         // BUG: Pulse might be called when no one is waiting
         // and the wakeup is lost
         
-            while(_count < 1 && !_isCompleted)
-                Monitor.Wait(_lock);
             Monitor.Pulse(_lock);
         }
     }
@@ -72,6 +70,7 @@ public class BuggyQueue<T> where T : class
             // BUG: This is not protected by the lock!
             var item = _queue.Dequeue();
             _count--;
+            Monitor.PulseAll(_lock);
             return item;
         }
     }
