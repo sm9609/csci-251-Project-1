@@ -23,8 +23,8 @@ public class Program
         //results["BuggyBank"] = TestBuggyBank();
         //results["BuggyCounter"] = TestBuggyCounter();
         //results["BuggyCache"] = TestBuggyCache();
-        // results["BuggyLogger"] = TestBuggyLogger();
-        results["BuggyQueue"] = TestBuggyQueue();
+        results["BuggyLogger"] = TestBuggyLogger();
+        //results["BuggyQueue"] = TestBuggyQueue();
 
         PrintSummary(results);
     }

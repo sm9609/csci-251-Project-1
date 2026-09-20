@@ -13,6 +13,7 @@ namespace RaceConditionDetective;
 /// </summary>
 public class BuggyLogger
 {
+    private readonly object _sync = new object();
     private readonly StringBuilder _buffer = new();
     private readonly List<string> _flushedMessages = new();
     private bool _isRunning = true;
@@ -27,8 +28,11 @@ public class BuggyLogger
     /// </summary>
     public void Log(string message)
     {
+        lock (_sync)
+        {
+            _buffer.AppendLine($"[{DateTime.Now:HH:mm:ss.fff}] {message}");
+        }
         // BUG: Multiple threads appending to StringBuilder without synchronization
-        _buffer.AppendLine($"[{DateTime.Now:HH:mm:ss.fff}] {message}");
     }
 
     /// <summary>
@@ -40,13 +44,16 @@ public class BuggyLogger
         // Another thread might append between ToString() and Clear()
         if (_buffer.Length > 0)
         {
-            string contents = _buffer.ToString();
-            _buffer.Clear();
-
-            // Store flushed content (for testing)
-            if (!string.IsNullOrWhiteSpace(contents))
+            lock (_sync)
             {
-                _flushedMessages.Add(contents);
+                string contents = _buffer.ToString();
+                _buffer.Clear();
+        
+                // Store flushed content (for testing)
+                if (!string.IsNullOrWhiteSpace(contents))
+                {
+                    _flushedMessages.Add(contents);
+                }
             }
         }
     }
