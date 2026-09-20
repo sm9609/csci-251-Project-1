@@ -1,4 +1,4 @@
-// YOUR NAME HERE
+// Samuel Mensah
 // CSCI 251 - Project 1: Race Condition Detective
 // Bug 5: BuggyQueue - Fix the race condition(s) in this file
 
